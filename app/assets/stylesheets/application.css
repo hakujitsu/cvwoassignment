@@ -1,0 +1,200 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ /* Overall Layout */
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 60px auto;
+}
+
+/* Header */
+.header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #DB4C3F;
+
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-left: 20px;
+    font-size: 24px;
+    color: #ffffff; 
+}
+
+/* Sidebar */
+.sidebar{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    background-color: #FAFAFA;
+}
+
+.default_sidebar{
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 20px;
+    
+    font-size: 14px;
+}
+
+.default_options{
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.sb{
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.icon {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+}
+
+
+/* Sidebar – tags */
+.sidebar_tags{
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 20px;
+    overflow: scroll;
+}
+
+.sb_tag_title{
+    font-size: 14px;
+}
+
+.sbtag {
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+
+/* Tasklist */
+
+.main{
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #ffffff;
+
+    overflow: scroll;
+}
+
+.taskheader{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tasklist{
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.taskname{
+    font-size: 14px;
+}
+
+.tag{
+    font-size: 12px;
+    color: #9F9F9F;
+}
+
+.addtask{
+    font-size: 14px;
+    color: #696969;
+}
+
+/* Others */
+.icon {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.addtag{
+    height: 1em;
+    width: auto;
+    float: right;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+.edit{
+    float: right;
+    height: 17px;
+    width: auto;
+    vertical-align: middle;
+    fill: #9F9F9F;
+    padding-right: 10px;
+}
+
+.delete{
+    float:right;
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    fill: #9F9F9F;
+}
+
+.circle {
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: palevioletred;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 
+CSS Fixes to ask 
+1. Overflow for tag in sidebar
+2. Overflow for tag on the right
+
+
+
+*/
